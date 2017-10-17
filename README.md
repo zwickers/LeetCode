@@ -1,4 +1,3 @@
-# LeetCode
-⚔️ LeetCode Solutions implemented in Python
+# ⚔️ LeetCode Python Solutions
 
-Work in progres...
+Work in progress...
