@@ -1,0 +1,46 @@
+class MinStack(object):
+    
+    # This solution maintains
+    # O(1) pop() and push() operations 
+    # of the stack while still allowing for
+    # a getMin() method
+    
+    # it works like this:
+    # each push() operation actually pushes a tuple
+    # onto a stack, where the first element is the actual
+    # element that is being added onto the stack, and the
+    # 2nd element is the minimum element so far
+    
+    def __init__(self):
+        """
+        initialize your data structure here.
+        """
+        self.stack = []
+
+    def push(self, x):
+        """
+        :type x: int
+        :rtype: void
+        """
+        self.stack.append((x,x)) if not self.stack else self.stack.append((x,min(x,self.stack[-1][1])))
+            
+    def pop(self):
+        """
+        :rtype: void
+        """
+        # note: this implementation of pop() doesn't return anything
+        if self.stack: self.stack.pop()
+
+    # AKA peek()
+    def top(self):
+        """
+        :rtype: int
+        """
+        # if empty, return None
+        return None if not self.stack else self.stack[-1][0]
+
+    def getMin(self):
+        """
+        :rtype: int
+        """
+        return self.stack[-1][1] if self.stack else None
