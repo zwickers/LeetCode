@@ -5,6 +5,9 @@ class Solution(object):
         :rtype: int
         """
 
+        # solution with O(n) time complexity
+        # and O(n) space complexity
+        
         # make a set
         numberSet = set()
         
