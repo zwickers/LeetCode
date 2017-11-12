@@ -5,6 +5,10 @@ class Solution:
         :type target: int
         :rtype: List[int]
         """
+        
+        # O(n) time complexity
+        # O(n) space complexity
+        
         # KEYS: numbers from the nums list
         # VALUES: the respective indices of the numbers from the nums list
         buff_dict = {}
