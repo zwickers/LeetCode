@@ -8,6 +8,8 @@
  * }
  */
 class Solution {
+    
+    // TIME COMPLEXITY: O(N), where N is the number of nodes
     public int maxDepth(TreeNode root) {
         
         if (root == null) {
